@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dafb064f-f50f-43c7-9877-9f103234b004" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.English-Recognition-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.English-Recognition-1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alphabets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alphabets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +38,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Alphabets.cs" />
       </list>
     </option>
   </component>
@@ -91,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608292212494</updated>
-      <workItem from="1608292406441" duration="3436000" />
+      <workItem from="1608292406441" duration="4506000" />
     </task>
     <servers />
   </component>

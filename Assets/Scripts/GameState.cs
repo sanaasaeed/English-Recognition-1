@@ -1,21 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class GameState : MonoBehaviour
 {
     private Animator basketAnimation;
-    private Alphabets alphabets;
-
+    [SerializeField] private GameObject targetAlphabet;
     [SerializeField] private int count;
-    // Start is called before the first frame update
+
+    private bool isTargetSet = false;
     void Start() {
         basketAnimation = FindObjectOfType<Animator>();
-        alphabets = FindObjectOfType<Alphabets>();
     }
 
-    public void targetLetter() {
-        
+    public void SetTargetAlphabet(Sprite target) {
+        if (!isTargetSet) {
+            targetAlphabet.GetComponent<SpriteRenderer>().sprite = target;
+            isTargetSet = true;
+        }
     }
 
     public void AnimateBasket() {

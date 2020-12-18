@@ -13,7 +13,7 @@ public class Alphabets : MonoBehaviour {
         gameState = FindObjectOfType<GameState>();
         if (gameObject.CompareTag("target")) {
             target = alphabets[Random.Range(0,25)];
-            GetComponent<SpriteRenderer>().sprite = target;
+            gameState.SetTargetAlphabet(target);
         }
 
         alphabets.Remove(target);
