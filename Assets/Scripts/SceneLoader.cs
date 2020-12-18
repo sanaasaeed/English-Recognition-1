@@ -7,5 +7,8 @@ public class SceneLoader : MonoBehaviour
         int currentBuildIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentBuildIndex + 1);
     }
-    
+
+    public void OnQuit() {
+        Application.Quit();
+    }
 }
