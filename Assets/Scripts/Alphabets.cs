@@ -8,16 +8,20 @@ public class Alphabets : MonoBehaviour {
     private float lowerLimit = 6;
     private Sprite target;
     [SerializeField] private List<Sprite> alphabets;
-    
+
     private void Start() {
         gameState = FindObjectOfType<GameState>();
+        target = alphabets[Random.Range(0, 25)];
         if (gameObject.CompareTag("target")) {
-            target = alphabets[Random.Range(0,25)];
-            gameState.SetTargetAlphabet(target);
+            // If target is not set already
+            if (!gameState.isTargetSet) {
+                gameState.SetTargetAlphabet(target);
+            }
         }
-
-        alphabets.Remove(target);
-        GetComponent<SpriteRenderer>().sprite = alphabets[Random.Range(0, 24)];
+        else {
+            alphabets.Remove(target);
+            GetComponent<SpriteRenderer>().sprite = alphabets[Random.Range(0, 24)];
+        }
     }
 
     void Update()

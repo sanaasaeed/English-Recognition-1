@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class GameState : MonoBehaviour
 {
@@ -9,16 +10,14 @@ public class GameState : MonoBehaviour
     [SerializeField] private GameObject targetAlphabet;
     [SerializeField] private int count;
 
-    private bool isTargetSet = false;
+    public bool isTargetSet = false;
     void Start() {
         basketAnimation = FindObjectOfType<Animator>();
     }
 
     public void SetTargetAlphabet(Sprite target) {
-        if (!isTargetSet) {
-            targetAlphabet.GetComponent<SpriteRenderer>().sprite = target;
-            isTargetSet = true;
-        }
+        targetAlphabet.GetComponent<SpriteRenderer>().sprite = target;
+        isTargetSet = true;
     }
 
     public void AnimateBasket() {
