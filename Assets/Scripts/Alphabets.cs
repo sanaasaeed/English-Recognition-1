@@ -9,12 +9,13 @@ public class Alphabets : MonoBehaviour {
     private Sprite target;
     [SerializeField] private List<Sprite> alphabets;
 
+    
     private void Start() {
         gameState = FindObjectOfType<GameState>();
-        target = alphabets[Random.Range(0, 25)];
         if (gameObject.CompareTag("target")) {
             // If target is not set already
             if (!gameState.isTargetSet) {
+                target = alphabets[Random.Range(0, 25)];
                 gameState.SetTargetAlphabet(target);
             }
         }

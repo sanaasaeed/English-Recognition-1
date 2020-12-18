@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dafb064f-f50f-43c7-9877-9f103234b004" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.English-Recognition-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.English-Recognition-1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Target.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Target.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alphabets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alphabets.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608292212494</updated>
-      <workItem from="1608292406441" duration="5709000" />
+      <workItem from="1608292406441" duration="7728000" />
+      <workItem from="1608317921527" duration="765000" />
     </task>
     <servers />
   </component>
@@ -113,8 +114,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2012" y="92" width="1256" height="676" key="VCS.FileHistoryDialog" timestamp="1608304578065">
+      <screen x="1920" y="0" width="1440" height="860" />
+    </state>
+    <state x="2012" y="92" width="1256" height="676" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1440.860@1920.0.1440.860" timestamp="1608304578065" />
   </component>
 </project>

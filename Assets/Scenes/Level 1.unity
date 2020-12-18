@@ -472,10 +472,7 @@ MonoBehaviour:
   spawningObjects:
   - {fileID: 8736591686397067924, guid: bd852747127288441a60f0dc6cf2e2c6, type: 3}
   - {fileID: 3525458611058007489, guid: bc0a571fd0d13a842a5a6c5a43b5a13b, type: 3}
-  delay: 2
-  interval: 1
-  xRange: 6
-  yPos: 8
+  xRange: 5.5
 --- !u!1 &1442152770
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +824,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a946fe9a18e6746bd595cca202e7d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetAlphabet: {fileID: 3525458611058007489, guid: bc0a571fd0d13a842a5a6c5a43b5a13b,
+    type: 3}
   count: 0
+  isTargetSet: 0
 --- !u!1001 &6887637016254263545
 PrefabInstance:
   m_ObjectHideFlags: 0
