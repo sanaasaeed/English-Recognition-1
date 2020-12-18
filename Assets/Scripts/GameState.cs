@@ -10,6 +10,8 @@ public class GameState : MonoBehaviour
     private Animator basketAnimation;
     [SerializeField] private GameObject targetAlphabet;
     [SerializeField] private TextMeshProUGUI scoreText;
+    public static Sprite target;
+    [SerializeField] private List<Sprite> alphabets;
     private int count = 0;
 
     public bool isTargetSet = false;
@@ -17,10 +19,12 @@ public class GameState : MonoBehaviour
         basketAnimation = FindObjectOfType<Animator>();
     }
 
-    public void SetTargetAlphabet(Sprite target) {
+    public void SetTarget() {
+        target = alphabets[Random.Range(0, 25)];
         targetAlphabet.GetComponent<SpriteRenderer>().sprite = target;
         isTargetSet = true;
     }
+    
 
     public void AnimateBasket() {
         basketAnimation.enabled = true;
