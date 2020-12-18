@@ -5,10 +5,10 @@ using Random = UnityEngine.Random;
 
 public class SpawnManager : MonoBehaviour {
     [SerializeField] List<GameObject> spawningObjects;
-    [SerializeField] float delay = 2;
-    [SerializeField] public float interval = 2.0f;
+    private float delay = 2;
+    private float interval = 1f;
     [SerializeField] public float xRange = 5.5f;
-    [SerializeField] public float yPos = 8f;
+    private float yPos = 7f;
 
     private void Start() {
         InvokeRepeating(nameof(SpawnRandomAlphabets), delay, interval);
