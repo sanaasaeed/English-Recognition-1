@@ -9,7 +9,6 @@ public class Alphabets : MonoBehaviour {
     private Sprite target;
     [SerializeField] private List<Sprite> alphabets;
 
-    
     private void Start() {
         gameState = FindObjectOfType<GameState>();
         if (gameObject.CompareTag("target")) {
@@ -39,6 +38,7 @@ public class Alphabets : MonoBehaviour {
             Destroy(gameObject);
         }
         else if(gameObject.CompareTag("enemy")) {
+            gameState.DecreaseScore();
             gameState.AnimateBasket();
             // What to do when kid collect wrong alphabet
         }

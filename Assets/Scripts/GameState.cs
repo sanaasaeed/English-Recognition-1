@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using TMPro;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
@@ -8,7 +9,8 @@ public class GameState : MonoBehaviour
 {
     private Animator basketAnimation;
     [SerializeField] private GameObject targetAlphabet;
-    [SerializeField] private int count;
+    [SerializeField] private TextMeshProUGUI scoreText;
+    private int count = 0;
 
     public bool isTargetSet = false;
     void Start() {
@@ -30,6 +32,11 @@ public class GameState : MonoBehaviour
 
     public void IncreaseScore() {
         count += 30;
+        scoreText.text = count.ToString();
     }
-    
+
+    public void DecreaseScore() {
+        count -= 30;
+        scoreText.text = count.ToString();
+    }
 }
