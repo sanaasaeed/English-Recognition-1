@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 
 public class SpawnManager : MonoBehaviour {
     [SerializeField] List<GameObject> spawningObjects;
-    private float delay = 2;
+    private float delay = 4;
     private float interval = 1f;
     [SerializeField] public float xRange = 5.5f;
     private float yPos = 7f;

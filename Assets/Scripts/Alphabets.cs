@@ -33,6 +33,7 @@ public class Alphabets : MonoBehaviour {
         
         if (gameObject.CompareTag("target")) {
             gameState.IncreaseScore();
+            
             Destroy(gameObject);
         }
         else if(gameObject.CompareTag("enemy")) {
