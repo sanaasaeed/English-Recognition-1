@@ -52,11 +52,11 @@ public class GameState : MonoBehaviour
 
     public void SetLevelScore() {
         if (SceneManager.GetActiveScene().buildIndex == 1) {
-            levelScore = 100;
+            levelScore = 150;
         } else if (SceneManager.GetActiveScene().buildIndex == 2) {
             levelScore = 300;
         } else if (SceneManager.GetActiveScene().buildIndex == 3) {
-            levelScore = 500;
+            levelScore = 450;
         }
     }
 }

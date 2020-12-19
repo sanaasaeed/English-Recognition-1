@@ -259,6 +259,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 693a9352271b2e64eafd3d7fd1a97b2e, type: 3}
+--- !u!114 &375249983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6867427759695982656, guid: c0d879f054d868648a936beb326c2ecf,
+    type: 3}
+  m_PrefabInstance: {fileID: 532384436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &532384436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -376,6 +388,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6867427759667530415, guid: c0d879f054d868648a936beb326c2ecf,
+        type: 3}
+      propertyPath: goals
+      value: 
+      objectReference: {fileID: 375249983}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0d879f054d868648a936beb326c2ecf, type: 3}
 --- !u!114 &532384437 stripped
@@ -681,6 +698,12 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 532384437}
+    - target: {fileID: 8633576764947247567, guid: 8492c6b0b8bd5584bb45c25fec2d9287,
+        type: 3}
+      propertyPath: targetAlphabetPrefab
+      value: 
+      objectReference: {fileID: 3525458611058007489, guid: bc0a571fd0d13a842a5a6c5a43b5a13b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8492c6b0b8bd5584bb45c25fec2d9287, type: 3}
 --- !u!1001 &2009055280
