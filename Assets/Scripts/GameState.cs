@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Debug = UnityEngine.Debug;
 using Random = UnityEngine.Random;
 
 public class GameState : MonoBehaviour
@@ -15,6 +11,7 @@ public class GameState : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private List<Sprite> alphabets;
     private int count = 0;
+    private SceneLoader sceneloader;
     public static Sprite target;
     public static int levelScore;
 
@@ -42,6 +39,10 @@ public class GameState : MonoBehaviour
 
     public void IncreaseScore() {
         count += 10;
+        if (count == levelScore) {
+            SceneLoader.LoadNextSceneWithoutLoading();
+        }
+
         scoreText.text = count.ToString();
     }
 
