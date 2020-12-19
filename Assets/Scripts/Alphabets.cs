@@ -40,11 +40,11 @@ public class Alphabets : MonoBehaviour {
             Destroy(gameObject);
         }
         else if(gameObject.CompareTag("enemy")) {
-            audioManager.PlayWrongAudio();
+           audioManager.PlayWrongAudio();
             gameState.DecreaseScore();
             gameState.AnimateBasket();
             // What to do when kid collect wrong alphabet
-            Destroy(gameObject);
+           // Destroy(gameObject);
         }
         
     }

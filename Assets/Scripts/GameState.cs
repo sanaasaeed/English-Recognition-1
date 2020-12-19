@@ -35,12 +35,12 @@ public class GameState : MonoBehaviour
     }
 
     public void IncreaseScore() {
-        count += 30;
+        count += 10;
         scoreText.text = count.ToString();
     }
 
     public void DecreaseScore() {
-        count -= 30;
+        count -= 10;
         scoreText.text = count.ToString();
     }
 }
