@@ -12,6 +12,7 @@
           <e p="GameState.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="PopupMenu.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />
         </e>
