@@ -32,14 +32,17 @@ public class Alphabets : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         
         if (gameObject.CompareTag("target")) {
+            GetComponent<AudioSource>().Play();
             gameState.IncreaseScore();
             
-            Destroy(gameObject);
+         //   Destroy(gameObject);
         }
         else if(gameObject.CompareTag("enemy")) {
+            GetComponent<AudioSource>().Play();
             gameState.DecreaseScore();
             gameState.AnimateBasket();
             // What to do when kid collect wrong alphabet
+            Destroy(gameObject);
         }
         
     }
