@@ -1,33 +1,36 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
+using Random = UnityEngine.Random;
 
 public class GameState : MonoBehaviour
 {
     private Animator basketAnimation;
-    [SerializeField] private GameObject targetAlphabet;
+    [SerializeField] private GameObject targetAlphabetPrefab;
     [SerializeField] private TextMeshProUGUI scoreText;
-    public static Sprite target;
     [SerializeField] private List<Sprite> alphabets;
     private int count = 0;
+    public static Sprite target;
     public static int levelScore;
 
-    public bool isTargetSet = false;
-    void Start() {
-        basketAnimation = FindObjectOfType<Animator>();
+    private void OnEnable() {
+        SetTargetAlphabet();
         SetLevelScore();
     }
 
-    public void SetTarget() {
-        target = alphabets[Random.Range(0, 25)];
-        targetAlphabet.GetComponent<SpriteRenderer>().sprite = target;
-        isTargetSet = true;
+    void Start() {
+        basketAnimation = FindObjectOfType<Animator>();
     }
-    
+
+    public void SetTargetAlphabet() {
+        target = alphabets[Random.Range(0, 25)];
+        targetAlphabetPrefab.GetComponent<SpriteRenderer>().sprite = target;
+    }
 
     public void AnimateBasket() {
         basketAnimation.enabled = true;

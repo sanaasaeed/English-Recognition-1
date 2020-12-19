@@ -12,15 +12,9 @@ public class Alphabets : MonoBehaviour {
     private void Start() {
          gameState = FindObjectOfType<GameState>();
          audioManager = FindObjectOfType<AudioManager>();
-         if (gameObject.CompareTag("target")) {
-             // If target is not set already
-             if (!gameState.isTargetSet) {
-                 gameState.SetTarget();
-             }
-         }
-         else {
-            alphabets.Remove(GameState.target); 
-            GetComponent<SpriteRenderer>().sprite = alphabets[Random.Range(0, 24)];
+          if (!gameObject.CompareTag("target")) {
+             alphabets.Remove(GameState.target); 
+             GetComponent<SpriteRenderer>().sprite = alphabets[Random.Range(0, 24)];
          }
     }
 

@@ -12,8 +12,11 @@ public class PopupMenu : MonoBehaviour {
     private void Start() {
         gameState = FindObjectOfType<GameState>();
         Time.timeScale = 0f;
-        Debug.Log(gameState.isTargetSet);
-        goals.text = $"Collect all  \nAvoid all other letters \nReach {GameState.levelScore} points";
+        string alphabetTarget = GameState.target.ToString();
+        alphabetTarget = alphabetTarget.Substring(0, 1);
+        Debug.Log(alphabetTarget);
+        goals.text = $"Collect all {alphabetTarget} \nAvoid all other letters \nReach {GameState.levelScore} points";
+        
     }
 
     public void Update() {
