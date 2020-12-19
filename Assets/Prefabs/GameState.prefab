@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a946fe9a18e6746bd595cca202e7d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetAlphabet: {fileID: 3525458611058007489, guid: bc0a571fd0d13a842a5a6c5a43b5a13b,
+  targetAlphabetPrefab: {fileID: 3525458611058007489, guid: bc0a571fd0d13a842a5a6c5a43b5a13b,
     type: 3}
   scoreText: {fileID: 0}
   alphabets:
@@ -73,4 +73,3 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8a462bc9c1c1d0a46a922d08d2fe9e7a, type: 3}
   - {fileID: 21300000, guid: 4cff2fe550be6e947819f486dd86ca48, type: 3}
   - {fileID: 21300000, guid: 28edb00bd15360e489345ba1ada93b1a, type: 3}
-  isTargetSet: 0

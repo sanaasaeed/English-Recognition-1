@@ -40,7 +40,8 @@ public class GameState : MonoBehaviour
     public void IncreaseScore() {
         count += 10;
         if (count == levelScore) {
-            SceneLoader.LoadNextSceneWithoutLoading();
+            if(SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCountInBuildSettings)
+                SceneLoader.LoadNextSceneWithoutLoading();
         }
 
         scoreText.text = count.ToString();
@@ -53,11 +54,11 @@ public class GameState : MonoBehaviour
 
     public void SetLevelScore() {
         if (SceneManager.GetActiveScene().buildIndex == 1) {
-            levelScore = 150;
+            levelScore = 20;
         } else if (SceneManager.GetActiveScene().buildIndex == 2) {
-            levelScore = 300;
+            levelScore = 30;
         } else if (SceneManager.GetActiveScene().buildIndex == 3) {
-            levelScore = 450;
+            levelScore = 50;
         }
     }
 }
