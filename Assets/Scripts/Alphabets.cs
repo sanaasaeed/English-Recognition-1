@@ -37,8 +37,6 @@ public class Alphabets : MonoBehaviour {
            audioManager.PlayWrongAudio();
             gameState.DecreaseScore();
             gameState.AnimateBasket();
-            // What to do when kid collect wrong alphabet
-           // Destroy(gameObject);
         }
         
     }

@@ -29,11 +29,11 @@ public class PauseMenu : MonoBehaviour {
         IsGamePaused = true;
     }
 
-    public void SoundOff() {
+    /*public void SoundOff() {
         
     }
 
     public void MusicOff() {
         
-    }
+    }*/
 }

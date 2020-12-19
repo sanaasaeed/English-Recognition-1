@@ -14,7 +14,6 @@ public class PopupMenu : MonoBehaviour {
         Time.timeScale = 0f;
         string alphabetTarget = GameState.target.ToString();
         alphabetTarget = alphabetTarget.Substring(0, 1);
-        Debug.Log(alphabetTarget);
         goals.text = $"Collect all {alphabetTarget} \nAvoid all other letters \nReach {GameState.levelScore} points";
         
     }
