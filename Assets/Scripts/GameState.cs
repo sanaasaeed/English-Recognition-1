@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 
 public class GameState : MonoBehaviour
@@ -13,10 +14,12 @@ public class GameState : MonoBehaviour
     public static Sprite target;
     [SerializeField] private List<Sprite> alphabets;
     private int count = 0;
+    public static int levelScore;
 
     public bool isTargetSet = false;
     void Start() {
         basketAnimation = FindObjectOfType<Animator>();
+        SetLevelScore();
     }
 
     public void SetTarget() {
@@ -42,5 +45,15 @@ public class GameState : MonoBehaviour
     public void DecreaseScore() {
         count -= 10;
         scoreText.text = count.ToString();
+    }
+
+    public void SetLevelScore() {
+        if (SceneManager.GetActiveScene().buildIndex == 1) {
+            levelScore = 100;
+        } else if (SceneManager.GetActiveScene().buildIndex == 2) {
+            levelScore = 300;
+        } else if (SceneManager.GetActiveScene().buildIndex == 3) {
+            levelScore = 500;
+        }
     }
 }

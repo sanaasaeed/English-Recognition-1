@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PopupMenu : MonoBehaviour {
     public static bool IsPopUpOpened = true;
     public GameObject popupMenu;
-
-    private void OnEnable() {
+    public TextMeshProUGUI goals;
+    private GameState gameState;
+    private void Start() {
+        gameState = FindObjectOfType<GameState>();
         Time.timeScale = 0f;
+        Debug.Log(gameState.isTargetSet);
+        goals.text = $"Collect all  \nAvoid all other letters \nReach {GameState.levelScore} points";
     }
 
     public void Update() {
