@@ -7,9 +7,11 @@ public class Alphabets : MonoBehaviour {
     private GameState gameState;
     private float lowerLimit = 6;
     [SerializeField] private List<Sprite> alphabets;
+    private AudioManager audioManager;
 
     private void Start() {
          gameState = FindObjectOfType<GameState>();
+         audioManager = FindObjectOfType<AudioManager>();
          if (gameObject.CompareTag("target")) {
              // If target is not set already
              if (!gameState.isTargetSet) {
@@ -32,13 +34,13 @@ public class Alphabets : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         
         if (gameObject.CompareTag("target")) {
-            GetComponent<AudioSource>().Play();
+            audioManager.PlayCorrectAudio();
             gameState.IncreaseScore();
             
-         //   Destroy(gameObject);
+            Destroy(gameObject);
         }
         else if(gameObject.CompareTag("enemy")) {
-            GetComponent<AudioSource>().Play();
+            audioManager.PlayWrongAudio();
             gameState.DecreaseScore();
             gameState.AnimateBasket();
             // What to do when kid collect wrong alphabet
