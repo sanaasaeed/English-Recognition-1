@@ -10,6 +10,7 @@
           <e p="Alphabets.cs" t="Include" />
           <e p="AudioManager.cs" t="Include" />
           <e p="GameState.cs" t="Include" />
+          <e p="PauseMenu.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />
