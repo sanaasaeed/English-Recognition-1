@@ -20,6 +20,10 @@ public class SceneLoader : MonoBehaviour {
     public void LoadFirstScene() {
         SceneManager.LoadScene(0);
     }
+
+    public static void LoadLastScene() {
+        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+    }
     public void LoadNextScene() {
         StartCoroutine(LoadSceneAsync());
     }

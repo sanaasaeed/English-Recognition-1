@@ -11,7 +11,6 @@ public class GameState : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private List<Sprite> alphabets;
     private int count = 0;
-    private SceneLoader sceneloader;
     public static Sprite target;
     public static int levelScore;
 
@@ -49,6 +48,9 @@ public class GameState : MonoBehaviour
 
     public void DecreaseScore() {
         count -= 10;
+        if(count < 0) {
+            SceneLoader.LoadLastScene();
+        }
         scoreText.text = count.ToString();
     }
 
